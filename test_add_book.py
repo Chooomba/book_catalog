@@ -16,5 +16,13 @@ def test_add_book():
     assert books[0]["title"] == "Мастер и Маргарита"
     print("✓ Тест добавления книги пройден")
 
+    if len(books) >= MAX_BOOKS:
+        print(f"Достигнут лимит каталога: {MAX_BOOKS} книг. Добавление невозможно.")
+        return
+
+            if len(books) >= MAX_BOOKS:
+        print(f"Достигнут лимит каталога: {MAX_BOOKS} книг. Добавление невозможно.")
+        return
+
 if __name__ == "__main__":
     test_add_book()
