@@ -42,6 +42,19 @@ def add_book(title, author, year, filename="books.json"):
     
     print(f"Книга '{title}' добавлена с ID {new_id}")
 
+def search_by_isbn(isbn, filename="books.json"):
+    """Ищет книгу по точному совпадению ISBN."""
+    books = load_books(filename)
+    results = [book for book in books if book.get("isbn") == isbn]
+    
+    if not results:
+        print(f"Книга с ISBN '{isbn}' не найдена")
+    else:
+        print(f"Найдена книга:")
+        display_books(results)
+    
+    return results
+
 if __name__ == "__main__":
     print("Добро пожаловать в Каталог книг!")
     books_data = load_books()
