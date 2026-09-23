@@ -1,0 +1,12 @@
+#ток json
+books.json
+#кэш питона
+__pycache__/
+*.py[cod]
+*$py.class
+#виртуальное окружение 
+venv/
+.env/
+# настройки редактора
+.vscode/
+.idea/
