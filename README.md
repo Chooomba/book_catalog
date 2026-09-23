@@ -21,3 +21,6 @@
 ## Экспорт в CSV
 Функция `export_books(output_filename)` экспортирует каталог в CSV файл.
 По умолчанию сохраняется в `books.csv`.
+
+## Поиск по ISBN
+Функция `search_by_isbn(isbn)` ищет книгу по точному совпадению ISBN.
