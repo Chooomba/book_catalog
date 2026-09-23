@@ -88,4 +88,7 @@ if __name__ == "__main__":
     
     print(f"Каталог экспортирован в {output_filename} ({len(books)} книг)")
 
+
     MAX_BOOKS = 100
+
+    MAX_BOOKS = 500
