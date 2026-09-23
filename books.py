@@ -87,3 +87,5 @@ if __name__ == "__main__":
             f.write(f"{book['id']},{book['title']},{book['author']},{book['year']}\n")
     
     print(f"Каталог экспортирован в {output_filename} ({len(books)} книг)")
+
+    MAX_BOOKS = 100
